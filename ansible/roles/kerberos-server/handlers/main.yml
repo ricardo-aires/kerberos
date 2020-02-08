@@ -1,0 +1,11 @@
+---
+# handlers file for kerberos server role
+- name: restart kerberos service
+  service:
+    name: "{{ item }}"
+    state: started
+    enabled: yes
+    daemon_reload: yes
+  with_items:
+    - krb5kdc
+    - kadmin

@@ -1,0 +1,9 @@
+---
+- name: setup kerberos server
+  hosts: kdc
+  become: true
+
+  tasks:
+    - name: apply kerberos server role
+      include_role:
+        name: kerberos-server

@@ -1,0 +1,5 @@
+---
+# defaults file for kerberos client role
+kerberos_client_packages:
+  - krb5-workstation
+  - krb5-libs

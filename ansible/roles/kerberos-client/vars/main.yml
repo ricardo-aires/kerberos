@@ -1,0 +1,5 @@
+---
+# vars file for kerberos client role
+kerberos_client_realm: "{{ ansible_domain | upper }}"
+kerberos_client_kdc_ip: "{{ hostvars['kdc']['ansible_eth1']['ipv4']['address'] }}"
+kerberos_client_kdc_hostname: "{{ hostvars['kdc']['ansible_fqdn'] }}"

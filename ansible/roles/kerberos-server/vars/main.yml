@@ -1,0 +1,5 @@
+---
+# vars file for kerberos server role
+kerberos_server_user_princ:
+  - {name: 'rhenriques', pw: 'redhat'}
+  - {name: 'vagrant', pw: 'redhat'}

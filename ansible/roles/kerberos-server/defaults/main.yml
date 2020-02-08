@@ -1,0 +1,8 @@
+---
+# defaults file for kerberos server role
+kerberos_server_packages:
+  - krb5-server
+  - krb5-workstation
+kerberos_server_realm: '{{ ansible_domain | upper }}'
+kerberos_server_master_pw: redhat
+kerberos_server_admin: {princ: 'admin/admin', pw: 'redhat'}
